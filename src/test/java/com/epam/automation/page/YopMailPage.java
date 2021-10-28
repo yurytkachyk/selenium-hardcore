@@ -66,7 +66,7 @@ public class YopMailPage {
         return this;
     }
 
-    public boolean getTotalEstimatedCostFromMessage() {
+    public boolean isTotalEstimatedCostFromMessageAndComputeEngineEquals() {
         final String totalFromMessage = totalEstimatedCostFormMessage.getText();
         driver.switchTo().window(googleCloudWindow);
         final String totalFromComputeEngine = totalEstimatedCostFromComputeEngine.getText();
